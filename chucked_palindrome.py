@@ -12,7 +12,7 @@ def solution(str):
     if not str:
         return 0
     
-    for i in range(size >> 1):
+    for i in range(size//2):
         if str[:i+1] == str[size - 1 - i:]:
             return 2 + solution(str[i + 1: size - 1 - i])
     return 1
