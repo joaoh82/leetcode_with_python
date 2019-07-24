@@ -4,6 +4,8 @@
 # Output: [1, 3, 9, 54, 90, 210, 0, 0]
 # Explanation: 1 (1), 3 (1x3), 9 (1x3x3), 54 (3x3x6), 90 (3x6x5), 210 (6x5x7), 0 (5x7x0), 0 (7x0x-3)
 
+# https://leetcode.com/discuss/interview-question/336746/google-onsite-product-of-k-consecutive-numbers
+
 def solution(arr, k):
     size = len(arr)
     result = []
