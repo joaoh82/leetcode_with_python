@@ -14,9 +14,8 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        zero = 0
+        lastZeroFound = 0
         for i in range(0, len(nums)):
             if nums[i] != 0:
-                nums[i], nums[zero] = nums[zero], nums[i]
-                zero += 1
-                print(nums)
+                nums[i], nums[lastZeroFound] = nums[lastZeroFound], nums[i]
+                lastZeroFound += 1
